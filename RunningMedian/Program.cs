@@ -29,7 +29,7 @@ namespace RunningMedian
         else
         {
           int index = 0;
-          while (number > orderedNumbers[index] && index < orderedNumbers.Count - 1) index++;
+          while (index <= orderedNumbers.Count - 1 && number > orderedNumbers[index]) index++;
           orderedNumbers.Insert(index, number);
         }
 
